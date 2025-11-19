@@ -9,7 +9,6 @@ const JobDetails = () => {
     const job = useLoaderData()
     const { user } = useContext(AuthContext)
 
-    // Date picker state
     const [startDate, setStartDate] = useState(new Date())
 
     const {
@@ -39,8 +38,7 @@ const JobDetails = () => {
     }
 
     return (
-        <div className="flex flex-col md:flex-row justify-around gap-5 items-center min-h-[calc(100vh-306px)] `md:max-w-screen-xl` mx-auto">
-            {/* Job Details */}
+        <div className="flex flex-col md:flex-row justify-around gap-5 items-center min-h-[calc(100vh-306px)] `md:max-w-screen-xl mx-auto">
             <div className="flex-1 px-4 py-7 bg-white rounded-md shadow-md md:min-h-[350px]">
                 <div className="flex items-center justify-between">
                     {deadline && (
@@ -70,7 +68,6 @@ const JobDetails = () => {
                 </div>
             </div>
 
-            {/* Place A Bid Form */}
             <section className="p-6 w-full bg-white rounded-md shadow-md flex-1 md:min-h-[350px]">
                 <h2 className="text-lg font-semibold text-gray-700 capitalize">
                     Place A Bid
